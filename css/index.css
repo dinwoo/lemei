@@ -209,3 +209,29 @@ article section.introduce {
       padding: 10px 0;
       font-size: 1rem;
       line-height: 1.5; }
+
+footer {
+  background-color: #000; }
+  footer .wrapper {
+    padding: 3vw 0;
+    max-width: 980px;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff; }
+    @media only screen and (max-width: 1280px) {
+      footer .wrapper {
+        width: 920px; } }
+    @media only screen and (max-width: 960px) {
+      footer .wrapper {
+        width: 710px; } }
+    @media only screen and (max-width: 750px) {
+      footer .wrapper {
+        width: 500px; } }
+    @media only screen and (max-width: 540px) {
+      footer .wrapper {
+        width: 340px; } }
+    @media only screen and (max-width: 374px) {
+      footer .wrapper {
+        width: 280px; } }
