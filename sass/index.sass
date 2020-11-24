@@ -1,0 +1,76 @@
+@import "var.sass"
+
+*
+	// outline: 1px solid #f00
+	vertical-align: middle
+html
+	font-size: 20px
+
+header
+	figure.logo
+		img
+article
+	section.banner
+		width: 100%
+		.banner-pic
+			width: 100%
+			padding-bottom: 56.25%
+			background-image: url('../images/banner.jpg')
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: center center
+	section.contact-part
+		background-color: #eee
+		.wrapper
+			width: 70vw
+			max-width: 980px
+			margin: auto
+			padding: 5vw 0
+			.icon
+				+dib
+				width: 33.333333%
+				font-size: 7vw
+				color: #666
+				text-align: center
+				cursor: pointer
+	section.service
+		.wrapper
+			+wrapperStyle
+			padding: 2vw 0
+			.tab-bar
+				font-size: 0
+				.tab
+					padding: 1% 2%
+					font-size: 1rem
+					border: 1px solid #ccc
+					cursor: pointer
+					+dib
+			.service-content
+				width: 100%
+				padding: 15px
+				box-sizing: border-box
+				border: 1px solid #ccc
+				display: flex
+				.service-info
+					width: 300px
+					padding: 30px
+					border: 1px solid #ccc
+					box-sizing: border-box
+					.title
+						font-size: 1.5rem
+						font-weight: bold
+						margin-bottom: 20px
+					.service-item
+						font-size: 1.2rem
+						padding: 5px 0
+				.service-pic
+					width: calc(100% - 300px)
+					padding-left: 15px
+					box-sizing: border-box
+					.pic
+						width: 100%
+						padding-bottom: 100%
+						background-image: url('https://fakeimg.pl/500x500/333/fff?text=pic1')
+						background-size: cover
+						background-repeat: no-repeat
+						background-position: center center
