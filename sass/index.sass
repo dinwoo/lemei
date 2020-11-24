@@ -6,6 +6,22 @@
 html
 	font-size: 20px
 
+.owl-dots
+	padding: 10px 0
+	text-align: center
+	.owl-dot
+		width: 15px
+		height: 15px
+		background-color: #fff !important
+		border: 1px solid #ccc !important
+		border-radius: 50%
+		margin: 0 5px
+		&.active
+			background-color: #ccc !important
+		&:focus
+			outline: none
+
+
 header
 	figure.logo
 		img
@@ -33,6 +49,7 @@ article
 				color: #666
 				text-align: center
 				cursor: pointer
+				text-decoration: none
 	section.service
 		.wrapper
 			+wrapperStyle
@@ -44,33 +61,91 @@ article
 					font-size: 1rem
 					border: 1px solid #ccc
 					cursor: pointer
+					border-bottom: none
+					box-sizing: border-box
 					+dib
+					&.active
+						color: #fff
+						background-color: #666
+						border: 1px solid #666
 			.service-content
 				width: 100%
 				padding: 15px
 				box-sizing: border-box
 				border: 1px solid #ccc
-				display: flex
-				.service-info
-					width: 300px
-					padding: 30px
-					border: 1px solid #ccc
-					box-sizing: border-box
-					.title
-						font-size: 1.5rem
-						font-weight: bold
-						margin-bottom: 20px
-					.service-item
-						font-size: 1.2rem
-						padding: 5px 0
-				.service-pic
-					width: calc(100% - 300px)
-					padding-left: 15px
-					box-sizing: border-box
-					.pic
-						width: 100%
-						padding-bottom: 100%
-						background-image: url('https://fakeimg.pl/500x500/333/fff?text=pic1')
-						background-size: cover
-						background-repeat: no-repeat
-						background-position: center center
+				.service-box
+					display: none
+					width: 100%
+					// display: flex
+					.service-info
+						width: 300px
+						padding: 30px
+						border: 1px solid #ccc
+						box-sizing: border-box
+						.title
+							font-size: 1.5rem
+							font-weight: bold
+							margin-bottom: 20px
+						.service-item
+							font-size: 1.2rem
+							padding: 5px 0
+							color: #000
+							text-decoration: none
+							display: block
+					.service-pic
+						width: calc(100% - 300px)
+						padding-left: 15px
+						box-sizing: border-box
+						.pic
+							width: 100%
+							padding-bottom: 100%
+							background-image: url('https://fakeimg.pl/500x500/333/fff?text=pic1')
+							background-size: cover
+							background-repeat: no-repeat
+							background-position: center center
+				input
+					position: absolute
+					z-index: -100
+					opacity: 0
+					&:checked
+						& + .service-box
+							display: flex
+	section.awarded
+		padding: 3vw 0
+		background-color: #eee
+		.wrapper
+			+wrapperStyle
+			.title
+				font-size: 1.5rem
+				margin: 2vw 0
+				font-weight: bold
+				text-align: center
+			.carousel-box
+				width: 100%
+				.pic
+					width: 100%
+					padding-bottom: 50%
+					background-image: url('https://fakeimg.pl/500x300/333/fff?text=pic1')
+					background-size: cover
+					background-repeat: no-repeat
+					background-position: center center
+	section.introduce
+		padding: 2vw 0
+		.wrapper
+			+wrapperStyle
+			.intro-item
+				.title
+					font-size: 1.5rem
+					margin: 2vw 0
+					font-weight: bold
+				.pic
+					width: 100%
+					padding-bottom: 100%
+					background-image: url('https://fakeimg.pl/500x500/333/fff?text=pic1')
+					background-size: cover
+					background-repeat: no-repeat
+					background-position: center center
+				.txt
+					padding: 10px 0
+					font-size: 1rem
+					line-height: 1.5

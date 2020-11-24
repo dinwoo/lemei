@@ -3,8 +3,10 @@ html(lang="zh-tw")
 	head
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		title Document
+		title 樂美
 		link(rel="stylesheet", href="./css/css_reset.css")
+		link(rel="stylesheet", href="./css/owl.carousel.min.css")
+		link(rel="stylesheet", href="./css/owl.theme.default.min.css")
 		link(rel="stylesheet", href="./css/index.css")
 	body
 		header
@@ -15,26 +17,64 @@ html(lang="zh-tw")
 				.banner-pic
 			section.contact-part
 				.wrapper
-					i.icon.fab.fa-line
-					i.icon.fab.fa-facebook-messenger
-					i.icon.fas.fa-phone
+					a.icon.fab.fa-line(href="")
+					a.icon.fab.fa-facebook-messenger(href="")
+					a.icon.fas.fa-phone(href="")
 			section.service
 				.wrapper
 					.tab-bar
-						.tab 營業部
-						.tab 教學部
+						label(for="service1").tab.active 營業部
+						label(for="service2").tab 教學部
 					.service-content
-						.service-info
-							.title 服務項目
-							.service-item 營業部項目1
-							.service-item 營業部項目2
-							.service-item 營業部項目3
-							.service-item 營業部項目4
-							.service-item 營業部項目5
-							.service-item 營業部項目6
-						.service-pic
-							.pic
+						input(type="radio", name="service" id="service1" checked)
+						.service-box
+							.service-info
+								.title 服務項目
+								a.service-item(href="#sales1") 營業部項目1
+								a.service-item(href="#") 營業部項目2
+								a.service-item(href="#") 營業部項目3
+								a.service-item(href="#") 營業部項目4
+								a.service-item(href="#") 營業部項目5
+								a.service-item(href="#") 營業部項目6
+							.service-pic#service-carousel1.owl-carousel
+								.pic(style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=sales1')")
+								.pic(style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=sales2')")
+								.pic(style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=sales3')")
+						input(type="radio", name="service" id="service2")
+						.service-box
+							.service-info
+								.title 服務項目
+								a.service-item(href="#education1") 教學部項目1
+								a.service-item(href="#") 教學部項目2
+								a.service-item(href="#") 教學部項目3
+								a.service-item(href="#") 教學部項目4
+								a.service-item(href="#") 教學部項目5
+								a.service-item(href="#") 教學部項目6
+							.service-pic#service-carousel2.owl-carousel
+								.pic(style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=education1')")
+								.pic(style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=education2')")
+								.pic(style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=education3')")
+			section.awarded
+				.wrapper
+					.title 得獎作品
+					.carousel-box#awarded-carousel.owl-carousel
+						.pic(style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=awarded1')")
+						.pic(style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=awarded2')")
+						.pic(style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=awarded3')")
+						.pic(style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=awarded4')")
+						.pic(style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=awarded5')")
+						.pic(style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=awarded6')")
+			section.introduce
+				.wrapper
+					.intro-item#sales1
+						.title 教學部項目1:標題
+						.pic
+						.txt 營業部項目1文案營業部項目1文案營業部項目1文案營業部項目1文案營業部項目1文案營業部項目1文案營業部項目1文案
 
 
-
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
 		script(src="https://kit.fontawesome.com/ce95b71280.js" crossorigin="anonymous")
+		script(src="./js/libs/owl.carousel.min.js")
+		script(src="./js/index.js")
+		
+		

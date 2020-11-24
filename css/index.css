@@ -9,6 +9,21 @@
 html {
   font-size: 20px; }
 
+.owl-dots {
+  padding: 10px 0;
+  text-align: center; }
+  .owl-dots .owl-dot {
+    width: 15px;
+    height: 15px;
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+    border-radius: 50%;
+    margin: 0 5px; }
+    .owl-dots .owl-dot.active {
+      background-color: #ccc !important; }
+    .owl-dots .owl-dot:focus {
+      outline: none; }
+
 article section.banner {
   width: 100%; }
   article section.banner .banner-pic {
@@ -33,7 +48,8 @@ article section.contact-part {
       font-size: 7vw;
       color: #666;
       text-align: center;
-      cursor: pointer; }
+      cursor: pointer;
+      text-decoration: none; }
 
 article section.service .wrapper {
   max-width: 980px;
@@ -63,39 +79,133 @@ article section.service .wrapper {
       font-size: 1rem;
       border: 1px solid #ccc;
       cursor: pointer;
+      border-bottom: none;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
       display: inline-block;
       vertical-align: middle; }
+      article section.service .wrapper .tab-bar .tab.active {
+        color: #fff;
+        background-color: #666;
+        border: 1px solid #666; }
   article section.service .wrapper .service-content {
     width: 100%;
     padding: 15px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border: 1px solid #ccc;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    article section.service .wrapper .service-content .service-info {
-      width: 300px;
-      padding: 30px;
-      border: 1px solid #ccc;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box; }
-      article section.service .wrapper .service-content .service-info .title {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 20px; }
-      article section.service .wrapper .service-content .service-info .service-item {
-        font-size: 1.2rem;
-        padding: 5px 0; }
-    article section.service .wrapper .service-content .service-pic {
-      width: calc(100% - 300px);
-      padding-left: 15px;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box; }
-      article section.service .wrapper .service-content .service-pic .pic {
+    border: 1px solid #ccc; }
+    article section.service .wrapper .service-content .service-box {
+      display: none;
+      width: 100%; }
+      article section.service .wrapper .service-content .service-box .service-info {
+        width: 300px;
+        padding: 30px;
+        border: 1px solid #ccc;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+        article section.service .wrapper .service-content .service-box .service-info .title {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 20px; }
+        article section.service .wrapper .service-content .service-box .service-info .service-item {
+          font-size: 1.2rem;
+          padding: 5px 0;
+          color: #000;
+          text-decoration: none;
+          display: block; }
+      article section.service .wrapper .service-content .service-box .service-pic {
+        width: calc(100% - 300px);
+        padding-left: 15px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box; }
+        article section.service .wrapper .service-content .service-box .service-pic .pic {
+          width: 100%;
+          padding-bottom: 100%;
+          background-image: url("https://fakeimg.pl/500x500/333/fff?text=pic1");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center center; }
+    article section.service .wrapper .service-content input {
+      position: absolute;
+      z-index: -100;
+      opacity: 0; }
+      article section.service .wrapper .service-content input:checked + .service-box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+
+article section.awarded {
+  padding: 3vw 0;
+  background-color: #eee; }
+  article section.awarded .wrapper {
+    max-width: 980px;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    @media only screen and (max-width: 1280px) {
+      article section.awarded .wrapper {
+        width: 920px; } }
+    @media only screen and (max-width: 960px) {
+      article section.awarded .wrapper {
+        width: 710px; } }
+    @media only screen and (max-width: 750px) {
+      article section.awarded .wrapper {
+        width: 500px; } }
+    @media only screen and (max-width: 540px) {
+      article section.awarded .wrapper {
+        width: 340px; } }
+    @media only screen and (max-width: 374px) {
+      article section.awarded .wrapper {
+        width: 280px; } }
+    article section.awarded .wrapper .title {
+      font-size: 1.5rem;
+      margin: 2vw 0;
+      font-weight: bold;
+      text-align: center; }
+    article section.awarded .wrapper .carousel-box {
+      width: 100%; }
+      article section.awarded .wrapper .carousel-box .pic {
         width: 100%;
-        padding-bottom: 100%;
-        background-image: url("https://fakeimg.pl/500x500/333/fff?text=pic1");
+        padding-bottom: 50%;
+        background-image: url("https://fakeimg.pl/500x300/333/fff?text=pic1");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center; }
+
+article section.introduce {
+  padding: 2vw 0; }
+  article section.introduce .wrapper {
+    max-width: 980px;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    @media only screen and (max-width: 1280px) {
+      article section.introduce .wrapper {
+        width: 920px; } }
+    @media only screen and (max-width: 960px) {
+      article section.introduce .wrapper {
+        width: 710px; } }
+    @media only screen and (max-width: 750px) {
+      article section.introduce .wrapper {
+        width: 500px; } }
+    @media only screen and (max-width: 540px) {
+      article section.introduce .wrapper {
+        width: 340px; } }
+    @media only screen and (max-width: 374px) {
+      article section.introduce .wrapper {
+        width: 280px; } }
+    article section.introduce .wrapper .intro-item .title {
+      font-size: 1.5rem;
+      margin: 2vw 0;
+      font-weight: bold; }
+    article section.introduce .wrapper .intro-item .pic {
+      width: 100%;
+      padding-bottom: 100%;
+      background-image: url("https://fakeimg.pl/500x500/333/fff?text=pic1");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; }
+    article section.introduce .wrapper .intro-item .txt {
+      padding: 10px 0;
+      font-size: 1rem;
+      line-height: 1.5; }

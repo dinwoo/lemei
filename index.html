@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Document</title>
+    <title>樂美</title>
     <link rel="stylesheet" href="./css/css_reset.css"/>
+    <link rel="stylesheet" href="./css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css"/>
     <link rel="stylesheet" href="./css/index.css"/>
   </head>
   <body>
@@ -16,31 +18,66 @@
         <div class="banner-pic"></div>
       </section>
       <section class="contact-part">
-        <div class="wrapper"><i class="icon fab fa-line"></i><i class="icon fab fa-facebook-messenger"></i><i class="icon fas fa-phone"></i></div>
+        <div class="wrapper"><a class="icon fab fa-line" href=""></a><a class="icon fab fa-facebook-messenger" href=""></a><a class="icon fas fa-phone" href=""></a></div>
       </section>
       <section class="service">
         <div class="wrapper">
           <div class="tab-bar">
-            <div class="tab">營業部</div>
-            <div class="tab">教學部</div>
+            <label class="tab active" for="service1">營業部</label>
+            <label class="tab" for="service2">教學部</label>
           </div>
           <div class="service-content">
-            <div class="service-info">
-              <div class="title">服務項目</div>
-              <div class="service-item">營業部項目1</div>
-              <div class="service-item">營業部項目2</div>
-              <div class="service-item">營業部項目3</div>
-              <div class="service-item">營業部項目4</div>
-              <div class="service-item">營業部項目5</div>
-              <div class="service-item">營業部項目6</div>
+            <input type="radio" name="service" id="service1" checked="checked"/>
+            <div class="service-box">
+              <div class="service-info">
+                <div class="title">服務項目</div><a class="service-item" href="#sales1">營業部項目1</a><a class="service-item" href="#">營業部項目2</a><a class="service-item" href="#">營業部項目3</a><a class="service-item" href="#">營業部項目4</a><a class="service-item" href="#">營業部項目5</a><a class="service-item" href="#">營業部項目6</a>
+              </div>
+              <div class="service-pic owl-carousel" id="service-carousel1">
+                <div class="pic" style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=sales1')"></div>
+                <div class="pic" style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=sales2')"></div>
+                <div class="pic" style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=sales3')"></div>
+              </div>
             </div>
-            <div class="service-pic">
-              <div class="pic"></div>
+            <input type="radio" name="service" id="service2"/>
+            <div class="service-box">
+              <div class="service-info">
+                <div class="title">服務項目</div><a class="service-item" href="#education1">教學部項目1</a><a class="service-item" href="#">教學部項目2</a><a class="service-item" href="#">教學部項目3</a><a class="service-item" href="#">教學部項目4</a><a class="service-item" href="#">教學部項目5</a><a class="service-item" href="#">教學部項目6</a>
+              </div>
+              <div class="service-pic owl-carousel" id="service-carousel2">
+                <div class="pic" style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=education1')"></div>
+                <div class="pic" style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=education2')"></div>
+                <div class="pic" style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=education3')"></div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <section class="awarded">
+        <div class="wrapper">
+          <div class="title">得獎作品</div>
+          <div class="carousel-box owl-carousel" id="awarded-carousel">
+            <div class="pic" style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=awarded1')"></div>
+            <div class="pic" style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=awarded2')"></div>
+            <div class="pic" style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=awarded3')"></div>
+            <div class="pic" style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=awarded4')"></div>
+            <div class="pic" style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=awarded5')"></div>
+            <div class="pic" style="background-image:url('https://fakeimg.pl/500x300/333/fff?text=awarded6')"></div>
+          </div>
+        </div>
+      </section>
+      <section class="introduce">
+        <div class="wrapper">
+          <div class="intro-item" id="sales1">
+            <div class="title">教學部項目1:標題</div>
+            <div class="pic"></div>
+            <div class="txt">營業部項目1文案營業部項目1文案營業部項目1文案營業部項目1文案營業部項目1文案營業部項目1文案營業部項目1文案</div>
+          </div>
+        </div>
+      </section>
     </article>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/ce95b71280.js" crossorigin="anonymous"></script>
+    <script src="./js/libs/owl.carousel.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
