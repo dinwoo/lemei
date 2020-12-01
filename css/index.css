@@ -6,6 +6,10 @@
 * {
   vertical-align: middle; }
 
+img {
+  width: 100%;
+  vertical-align: middle; }
+
 html {
   font-size: 20px; }
 
@@ -24,6 +28,12 @@ html {
     .owl-dots .owl-dot:focus {
       outline: none; }
 
+header {
+  padding: 5px;
+  background-color: #0A0A0D; }
+  header figure.logo {
+    width: 200px; }
+
 article section.banner {
   width: 100%; }
   article section.banner .banner-pic {
@@ -35,18 +45,18 @@ article section.banner {
     background-position: center center; }
 
 article section.contact-part {
-  background-color: #eee; }
+  background-color: #fcdff3; }
   article section.contact-part .wrapper {
     width: 70vw;
     max-width: 980px;
     margin: auto;
-    padding: 5vw 0; }
+    padding: 2vw 0; }
     article section.contact-part .wrapper .icon {
       display: inline-block;
       vertical-align: middle;
       width: 33.333333%;
       font-size: 7vw;
-      color: #666;
+      color: #999;
       text-align: center;
       cursor: pointer;
       text-decoration: none; }
@@ -75,13 +85,15 @@ article section.service .wrapper {
   article section.service .wrapper .tab-bar {
     font-size: 0; }
     article section.service .wrapper .tab-bar .tab {
-      padding: 1% 2%;
+      width: 50%;
+      padding: 2%;
       font-size: 1rem;
       border: 1px solid #ccc;
       cursor: pointer;
       border-bottom: none;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
+      text-align: center;
       display: inline-block;
       vertical-align: middle; }
       article section.service .wrapper .tab-bar .tab.active {
@@ -93,7 +105,8 @@ article section.service .wrapper {
     padding: 15px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border: 1px solid #ccc; }
+    -webkit-box-shadow: 1px 5px 5px #ccc;
+    box-shadow: 1px 5px 5px #ccc; }
     article section.service .wrapper .service-content .service-box {
       display: none;
       width: 100%; }
@@ -108,7 +121,7 @@ article section.service .wrapper {
           font-weight: bold;
           margin-bottom: 20px; }
         article section.service .wrapper .service-content .service-box .service-info .service-item {
-          font-size: 1.2rem;
+          font-size: 1rem;
           padding: 5px 0;
           color: #000;
           text-decoration: none;
@@ -136,7 +149,7 @@ article section.service .wrapper {
 
 article section.awarded {
   padding: 3vw 0;
-  background-color: #eee; }
+  background-color: #fcdff3; }
   article section.awarded .wrapper {
     max-width: 980px;
     margin: auto;
@@ -173,7 +186,8 @@ article section.awarded {
         background-position: center center; }
 
 article section.introduce {
-  padding: 2vw 0; }
+  padding: 2vw 0;
+  background-color: #ece4e2; }
   article section.introduce .wrapper {
     max-width: 980px;
     margin: auto;
@@ -194,21 +208,45 @@ article section.introduce {
     @media only screen and (max-width: 374px) {
       article section.introduce .wrapper {
         width: 280px; } }
+    article section.introduce .wrapper .intro-item .card {
+      width: 100%;
+      -webkit-box-shadow: 1px 1px 20px rgba(254, 146, 159, 0.4);
+      box-shadow: 1px 1px 20px rgba(254, 146, 159, 0.4);
+      padding: 15px;
+      margin: 10px 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      font-size: 0; }
     article section.introduce .wrapper .intro-item .title {
       font-size: 1.5rem;
       margin: 2vw 0;
-      font-weight: bold; }
+      padding: 0.5vw 0;
+      font-weight: bold;
+      border-bottom: 3px solid #fe929f; }
+    article section.introduce .wrapper .intro-item .sub-title {
+      font-size: 1.2rem;
+      margin: 0.5vw 0; }
     article section.introduce .wrapper .intro-item .pic {
-      width: 100%;
-      padding-bottom: 100%;
+      width: 50%;
+      padding-bottom: 50%;
       background-image: url("https://fakeimg.pl/500x500/333/fff?text=pic1");
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center center; }
-    article section.introduce .wrapper .intro-item .txt {
-      padding: 10px 0;
-      font-size: 1rem;
-      line-height: 1.5; }
+      background-position: center center;
+      display: inline-block;
+      vertical-align: top; }
+    article section.introduce .wrapper .intro-item .content {
+      width: 50%;
+      padding: 10px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top; }
+      article section.introduce .wrapper .intro-item .content .txt {
+        font-size: 0.8rem;
+        line-height: 1.5; }
+        article section.introduce .wrapper .intro-item .content .txt span.bold {
+          font-weight: 500; }
 
 footer {
   background-color: #000; }

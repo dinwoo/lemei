@@ -3,6 +3,10 @@
 *
 	// outline: 1px solid #f00
 	vertical-align: middle
+
+img
+	width: 100%
+	vertical-align: middle
 html
 	font-size: 20px
 
@@ -23,7 +27,10 @@ html
 
 
 header
+	padding: 5px
+	background-color: #0A0A0D
 	figure.logo
+		width: 200px
 		img
 article
 	section.banner
@@ -36,17 +43,17 @@ article
 			background-repeat: no-repeat
 			background-position: center center
 	section.contact-part
-		background-color: #eee
+		background-color: $bubble
 		.wrapper
 			width: 70vw
 			max-width: 980px
 			margin: auto
-			padding: 5vw 0
+			padding: 2vw 0
 			.icon
 				+dib
 				width: 33.333333%
 				font-size: 7vw
-				color: #666
+				color: #999
 				text-align: center
 				cursor: pointer
 				text-decoration: none
@@ -57,12 +64,14 @@ article
 			.tab-bar
 				font-size: 0
 				.tab
-					padding: 1% 2%
+					width: 50%
+					padding: 2%
 					font-size: 1rem
 					border: 1px solid #ccc
 					cursor: pointer
 					border-bottom: none
 					box-sizing: border-box
+					text-align: center
 					+dib
 					&.active
 						color: #fff
@@ -72,7 +81,8 @@ article
 				width: 100%
 				padding: 15px
 				box-sizing: border-box
-				border: 1px solid #ccc
+				// border: 1px solid #ccc
+				box-shadow: 1px 5px 5px #ccc
 				.service-box
 					display: none
 					width: 100%
@@ -87,7 +97,7 @@ article
 							font-weight: bold
 							margin-bottom: 20px
 						.service-item
-							font-size: 1.2rem
+							font-size: 1rem
 							padding: 5px 0
 							color: #000
 							text-decoration: none
@@ -112,7 +122,7 @@ article
 							display: flex
 	section.awarded
 		padding: 3vw 0
-		background-color: #eee
+		background-color: $bubble
 		.wrapper
 			+wrapperStyle
 			.title
@@ -131,24 +141,48 @@ article
 					background-position: center center
 	section.introduce
 		padding: 2vw 0
+		background-color: $bone
 		.wrapper
 			+wrapperStyle
 			.intro-item
+				.card
+					width: 100%
+					// border: 1px solid $tickle
+					box-shadow: 1px 1px 20px rgba($tickle,.4)
+					padding: 15px
+					margin: 10px 0
+					box-sizing: border-box
+					font-size: 0
 				.title
 					font-size: 1.5rem
 					margin: 2vw 0
+					padding: 0.5vw 0
 					font-weight: bold
+					border-bottom: 3px solid $tickle
+					// display: inline-block
+				.sub-title
+					font-size: 1.2rem
+					margin: 0.5vw 0
 				.pic
-					width: 100%
-					padding-bottom: 100%
+					width: 50%
+					padding-bottom: 50%
 					background-image: url('https://fakeimg.pl/500x500/333/fff?text=pic1')
 					background-size: cover
 					background-repeat: no-repeat
 					background-position: center center
-				.txt
-					padding: 10px 0
-					font-size: 1rem
-					line-height: 1.5
+					display: inline-block
+					vertical-align: top
+				.content
+					width: 50%
+					padding: 10px
+					box-sizing: border-box
+					display: inline-block
+					vertical-align: top
+					.txt
+						font-size: 0.8rem
+						line-height: 1.5
+						span.bold
+							font-weight: 500
 footer
 	background-color: #000
 	.wrapper
