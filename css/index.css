@@ -20,11 +20,11 @@ html {
     width: 15px;
     height: 15px;
     background-color: #fff !important;
-    border: 1px solid #ccc !important;
+    border: 1px solid #fcd3d1 !important;
     border-radius: 50%;
     margin: 0 5px; }
     .owl-dots .owl-dot.active {
-      background-color: #ccc !important; }
+      background-color: #fcd3d1 !important; }
     .owl-dots .owl-dot:focus {
       outline: none; }
 
@@ -45,7 +45,7 @@ article section.banner {
     background-position: center center; }
 
 article section.contact-part {
-  background-color: #fcdff3; }
+  background-color: #ece4e2; }
   article section.contact-part .wrapper {
     width: 70vw;
     max-width: 980px;
@@ -59,7 +59,12 @@ article section.contact-part {
       color: #999;
       text-align: center;
       cursor: pointer;
-      text-decoration: none; }
+      text-decoration: none;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      article section.contact-part .wrapper .icon:hover {
+        color: #fe929f; }
 
 article section.service .wrapper {
   max-width: 980px;
@@ -88,7 +93,7 @@ article section.service .wrapper {
       width: 50%;
       padding: 2%;
       font-size: 1rem;
-      border: 1px solid #ccc;
+      border: 1px solid #fcd3d1;
       cursor: pointer;
       border-bottom: none;
       -webkit-box-sizing: border-box;
@@ -98,8 +103,8 @@ article section.service .wrapper {
       vertical-align: middle; }
       article section.service .wrapper .tab-bar .tab.active {
         color: #fff;
-        background-color: #666;
-        border: 1px solid #666; }
+        background-color: #fcd3d1;
+        border: 1px solid #fcd3d1; }
   article section.service .wrapper .service-content {
     width: 100%;
     padding: 15px;
@@ -113,7 +118,7 @@ article section.service .wrapper {
       article section.service .wrapper .service-content .service-box .service-info {
         width: 300px;
         padding: 30px;
-        border: 1px solid #ccc;
+        border: 1px solid #fcd3d1;
         -webkit-box-sizing: border-box;
         box-sizing: border-box; }
         article section.service .wrapper .service-content .service-box .service-info .title {
@@ -125,7 +130,12 @@ article section.service .wrapper {
           padding: 5px 0;
           color: #000;
           text-decoration: none;
-          display: block; }
+          display: block;
+          -webkit-transition: .3s;
+          -o-transition: .3s;
+          transition: .3s; }
+          article section.service .wrapper .service-content .service-box .service-info .service-item:hover {
+            color: #fe929f; }
       article section.service .wrapper .service-content .service-box .service-pic {
         width: calc(100% - 300px);
         padding-left: 15px;
@@ -149,7 +159,7 @@ article section.service .wrapper {
 
 article section.awarded {
   padding: 3vw 0;
-  background-color: #fcdff3; }
+  background-color: rgba(254, 146, 159, 0.3); }
   article section.awarded .wrapper {
     max-width: 980px;
     margin: auto;
@@ -179,7 +189,7 @@ article section.awarded {
       width: 100%; }
       article section.awarded .wrapper .carousel-box .pic {
         width: 100%;
-        padding-bottom: 50%;
+        padding-bottom: 100%;
         background-image: url("https://fakeimg.pl/500x300/333/fff?text=pic1");
         background-size: cover;
         background-repeat: no-repeat;
@@ -212,6 +222,7 @@ article section.introduce {
       width: 100%;
       -webkit-box-shadow: 1px 1px 20px rgba(254, 146, 159, 0.4);
       box-shadow: 1px 1px 20px rgba(254, 146, 159, 0.4);
+      background-color: #fff;
       padding: 15px;
       margin: 10px 0;
       -webkit-box-sizing: border-box;
