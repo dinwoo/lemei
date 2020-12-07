@@ -25,6 +25,14 @@ html
 		&:focus
 			outline: none
 
+.pic
+	width: 100%
+	padding-bottom: 100%
+	margin-bottom: 1vw
+	background-image: url('https://fakeimg.pl/500x500/333/fff?text=pic1')
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
 
 header
 	padding: 5px
@@ -112,13 +120,6 @@ article
 						width: calc(100% - 300px)
 						padding-left: 15px
 						box-sizing: border-box
-						.pic
-							width: 100%
-							padding-bottom: 100%
-							background-image: url('https://fakeimg.pl/500x500/333/fff?text=pic1')
-							background-size: cover
-							background-repeat: no-repeat
-							background-position: center center
 				input
 					position: absolute
 					z-index: -100
@@ -139,12 +140,6 @@ article
 			.carousel-box
 				width: 100%
 				.pic
-					width: 100%
-					padding-bottom: 100%
-					background-image: url('https://fakeimg.pl/500x300/333/fff?text=pic1')
-					background-size: cover
-					background-repeat: no-repeat
-					background-position: center center
 	section.introduce
 		padding: 2vw 0
 		background-color: $bone
@@ -169,16 +164,15 @@ article
 					// display: inline-block
 				.sub-title
 					font-size: 1.2rem
-					margin: 0.5vw 0
-				.pic
+					padding-left: 0.1rem
+					margin: 0.5vw 0 1vw
+					display: inline-block
+					border-left: 3px solid #ca2521
+				.pic-box
 					width: 50%
-					padding-bottom: 50%
-					background-image: url('https://fakeimg.pl/500x500/333/fff?text=pic1')
-					background-size: cover
-					background-repeat: no-repeat
-					background-position: center center
 					display: inline-block
 					vertical-align: top
+					.pic
 				.content
 					width: 50%
 					padding: 10px
@@ -193,7 +187,9 @@ article
 footer
 	background-color: #000
 	.wrapper
-		padding: 3vw 0
+		padding: 1vw 0
 		+wrapperStyle
+		font-size: 0.7rem
+		line-height: 1.5
 		text-align: center
 		color: #fff

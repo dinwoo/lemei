@@ -28,6 +28,15 @@ html {
     .owl-dots .owl-dot:focus {
       outline: none; }
 
+.pic {
+  width: 100%;
+  padding-bottom: 100%;
+  margin-bottom: 1vw;
+  background-image: url("https://fakeimg.pl/500x500/333/fff?text=pic1");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
 header {
   padding: 5px;
   background-color: #0A0A0D; }
@@ -141,13 +150,6 @@ article section.service .wrapper {
         padding-left: 15px;
         -webkit-box-sizing: border-box;
         box-sizing: border-box; }
-        article section.service .wrapper .service-content .service-box .service-pic .pic {
-          width: 100%;
-          padding-bottom: 100%;
-          background-image: url("https://fakeimg.pl/500x500/333/fff?text=pic1");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center center; }
     article section.service .wrapper .service-content input {
       position: absolute;
       z-index: -100;
@@ -187,13 +189,6 @@ article section.awarded {
       text-align: center; }
     article section.awarded .wrapper .carousel-box {
       width: 100%; }
-      article section.awarded .wrapper .carousel-box .pic {
-        width: 100%;
-        padding-bottom: 100%;
-        background-image: url("https://fakeimg.pl/500x300/333/fff?text=pic1");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center; }
 
 article section.introduce {
   padding: 2vw 0;
@@ -236,14 +231,12 @@ article section.introduce {
       border-bottom: 3px solid #fe929f; }
     article section.introduce .wrapper .intro-item .sub-title {
       font-size: 1.2rem;
-      margin: 0.5vw 0; }
-    article section.introduce .wrapper .intro-item .pic {
+      padding-left: 0.1rem;
+      margin: 0.5vw 0 1vw;
+      display: inline-block;
+      border-left: 3px solid #ca2521; }
+    article section.introduce .wrapper .intro-item .pic-box {
       width: 50%;
-      padding-bottom: 50%;
-      background-image: url("https://fakeimg.pl/500x500/333/fff?text=pic1");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
       display: inline-block;
       vertical-align: top; }
     article section.introduce .wrapper .intro-item .content {
@@ -262,11 +255,13 @@ article section.introduce {
 footer {
   background-color: #000; }
   footer .wrapper {
-    padding: 3vw 0;
+    padding: 1vw 0;
     max-width: 980px;
     margin: auto;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    font-size: 0.7rem;
+    line-height: 1.5;
     text-align: center;
     color: #fff; }
     @media only screen and (max-width: 1280px) {
