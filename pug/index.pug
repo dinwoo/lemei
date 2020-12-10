@@ -25,33 +25,10 @@ html(lang="zh-tw")
 			section.service
 				.wrapper
 					.tab-bar
-						label(for="service1").tab.active 營業部
-						label(for="service2").tab 教學部
+						label(for="service2").tab.active 教學部
+						label(for="service1").tab 營業部
 					.service-content
-						input(type="radio", name="service" id="service1" checked)
-						.service-box
-							.service-info
-								.title 服務項目
-								a.service-item(href="#sales1") 
-									i.fas.fa-star 
-									| 美睫
-								a.service-item(href="#sales2") 
-									i.fas.fa-star 
-									| 紋繡
-								a.service-item(href="#sales3") 
-									i.fas.fa-star 
-									| 無痛經絡紓壓
-								a.service-item(href="#sales4") 
-									i.fas.fa-star 
-									| 產品介紹
-							.service-pic#service-carousel1.owl-carousel
-								.pic(style="background-image:url('./images/sales1.jpg')")
-								.pic(style="background-image:url('./images/sales2-1.jpg')")
-								.pic(style="background-image:url('./images/sales2-2.jpg')")
-								.pic(style="background-image:url('./images/sales2-3.jpg')")
-								.pic(style="background-image:url('./images/sales3.jpg')")
-								.pic(style="background-image:url('./images/sales4.jpg')")
-						input(type="radio", name="service" id="service2")
+						input(type="radio", name="service" id="service2" checked)
 						.service-box
 							.service-info
 								.title 服務項目
@@ -76,9 +53,32 @@ html(lang="zh-tw")
 								.pic(style="background-image:url('./images/education3-3.jpg')")
 								.pic(style="background-image:url('./images/education3-4.jpg')")
 								.pic(style="background-image:url('./images/education4.jpg')")
+						input(type="radio", name="service" id="service1")
+						.service-box
+							.service-info
+								.title 服務項目
+								a.service-item(href="#sales1") 
+									i.fas.fa-star 
+									| 美睫
+								a.service-item(href="#sales2") 
+									i.fas.fa-star 
+									| 紋繡
+								a.service-item(href="#sales3") 
+									i.fas.fa-star 
+									| 無痛經絡紓壓
+								a.service-item(href="#sales4") 
+									i.fas.fa-star 
+									| 產品介紹
+							.service-pic#service-carousel1.owl-carousel
+								.pic(style="background-image:url('./images/sales1.jpg')")
+								.pic(style="background-image:url('./images/sales2-1.jpg')")
+								.pic(style="background-image:url('./images/sales2-2.jpg')")
+								.pic(style="background-image:url('./images/sales2-3.jpg')")
+								.pic(style="background-image:url('./images/sales3.jpg')")
+								.pic(style="background-image:url('./images/sales4.jpg')")
 			section.awarded
 				.wrapper
-					.title 得獎作品
+					.title 作品欣賞
 					.carousel-box#awarded-carousel.owl-carousel
 						.pic(style="background-image:url('./images/awarded1.jpg')")
 						.pic(style="background-image:url('./images/awarded2.jpg')")
@@ -347,7 +347,7 @@ html(lang="zh-tw")
 									br
 									span.bold 免費證照輔導輔導國內大型比賽
 									br
-									| 我們是雙師授課
+									| 雙師授課
 									br
 									| 紮實學科長達五十多頁的講義
 									br
