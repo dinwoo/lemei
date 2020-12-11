@@ -278,6 +278,8 @@ article section.introduce {
         line-height: 1.5; }
         article section.introduce .wrapper .intro-item .content .txt span.bold {
           font-weight: 500; }
+        article section.introduce .wrapper .intro-item .content .txt span.small {
+          font-size: 0.5rem; }
   @media only screen and (max-width: 768px) {
     article section.introduce {
       padding: 6vw 0; }
